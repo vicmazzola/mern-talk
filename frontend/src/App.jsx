@@ -1,5 +1,4 @@
 import Navbar from "./components/Navbar";
-
 import HomePage from "./pages/HomePage";
 import SignUpPage from "./pages/SignUpPage";
 import LoginPage from "./pages/LoginPage";
@@ -18,6 +17,11 @@ import { Toaster } from "react-hot-toast";
 const App = () => {
   const {authUser, checkAuth,isCheckingAuth} =  useAuthStore();
   const { theme } = useThemeStore();  
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+
   useEffect(() => {
     checkAuth();
   }, [checkAuth]);
@@ -32,7 +36,7 @@ const App = () => {
 
 
   return (
-    <div data-theme={theme}>
+    <div>
       <Navbar />
       <Routes>
         <Route path="/" element={authUser ? <HomePage /> : <Navigate to="/login" />} />

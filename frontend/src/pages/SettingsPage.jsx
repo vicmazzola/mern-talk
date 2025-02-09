@@ -3,9 +3,10 @@ import { useThemeStore } from "../store/useThemeStore";
 import { Send } from "lucide-react";
 
 const PREVIEW_MESSAGES = [
-  { id: 1, content: "Hey! How's it going?", isSent: false },
-  { id: 2, content: "I'm doing great! Just working on some new features.", isSent: true },
+  { id: 1, content: "Hey Doc, where is Einstein?", isSent: false },
+  { id: 2, content: "Don't worry, Marty! I sent him one minute into the future.", isSent: true },
 ];
+
 
 const SettingsPage = () => {
   const { theme, setTheme } = useThemeStore();
@@ -57,7 +58,7 @@ const SettingsPage = () => {
                       J
                     </div>
                     <div>
-                      <h3 className="font-medium text-sm">John Doe</h3>
+                      <h3 className="font-medium text-sm">Martin Mcfly</h3>
                       <p className="text-xs text-base-content/70">Online</p>
                     </div>
                   </div>

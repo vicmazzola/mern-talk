@@ -7,6 +7,7 @@ This is a **full-stack** real-time chat application built using the **MERN stack
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b2ff2665-3468-4551-8bbe-932ac99d02e3" alt="Login iPhone 14" width="300"/>
+  <img src="https://github.com/user-attachments/assets/76b1e6bb-a2b1-4fc0-9530-a3ae719071dc" alt="Settings iPhone 14" width="300"/>
   <img src="https://github.com/user-attachments/assets/4484638a-b253-418a-b71b-6a48b8a35732" alt="Chat Online iPhone 14" width="300"/>
   <img src="https://github.com/user-attachments/assets/8a7eaabe-33e1-4bde-b204-e5241d6a0ca1" alt="Settings iPhone 14" width="300"/>
 </p>

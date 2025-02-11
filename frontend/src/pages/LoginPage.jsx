@@ -3,6 +3,7 @@ import { useAuthStore } from "../store/useAuthStore";
 import AuthImagePattern from "../components/AuthImagePattern";
 import { Link } from "react-router-dom";
 import { Eye, EyeOff, Loader2, Lock, Mail, MessageSquare } from "lucide-react";
+import CopyrightFooter from "../components/CopyrightFooter";
 
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -105,13 +106,14 @@ const LoginPage = () => {
               </Link>
             </p>
           </div>
+          <CopyrightFooter />
         </div>
       </div>
 
       {/* Right Side - Image/Pattern */}
       <AuthImagePattern
-        title={"Welcome back!"}
-        subtitle={"Sign in to continue your conversations and catch up with your messages."}
+        title={"Back for More? We Missed You!"}
+        subtitle={"Sign in now and dive back into your conversations and latest updates."}
       />
     </div>
   );

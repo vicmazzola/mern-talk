@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 import AuthImagePattern from "../components/AuthImagePattern";
 import toast from "react-hot-toast";
+import CopyrightFooter from "../components/CopyrightFooter";
 
 const SignUpPage = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -139,15 +140,16 @@ const SignUpPage = () => {
               </Link>
             </p>
           </div>
+          <CopyrightFooter />
         </div>
       </div>
 
       {/* right side */}
 
       <AuthImagePattern
-        title="Join our community"
-        subtitle="Connect with friends, share moments, and stay in touch with your loved ones."
-      />
+        title="A Place to Connect, Share, and Stay Close"
+        subtitle="Meet new people, share special moments, and stay closer to friends and family, wherever you are."
+        />
     </div>
   );
 };
